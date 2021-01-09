@@ -1,0 +1,52 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+$ming: #3C6E71;
+$cream: #FFEFDF;
+$spring-bud: #D0D1AC;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $cream;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 20pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+a {
+  text-decoration: none;
+  color: $ming;
+}
+
+.top-nav {
+  margin: 0;
+  padding: 20px 30px 20px 30px;
+  background-color: $spring-bud;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-container {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.article-preview {
+  margin: 40px;
+}

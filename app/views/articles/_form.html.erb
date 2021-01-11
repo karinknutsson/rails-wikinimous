@@ -1,0 +1,5 @@
+<%= form_for(@article) do |f| %>
+  <h3>Title:</h3> <%= f.text_field :title %><br><br>
+  <h3>Content:</h3> <%= f.text_area :content %><br><br>
+  <%= f.submit %>
+<% end %>

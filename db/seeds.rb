@@ -7,5 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 10.times do
-  Article.create(title: Faker::Cannabis.strain, content: Faker::GreekPhilosophers.quote)
+  content = "#{Faker::TvShows::RuPaul.queen}: #{Faker::GreekPhilosophers.quote}
+  #{Faker::TvShows::RuPaul.queen}: #{Faker::TvShows::RuPaul.quote}"
+  Article.create(title: Faker::Cannabis.strain, content: content)
 end

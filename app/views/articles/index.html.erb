@@ -1,13 +1,13 @@
 <div class="top-nav">
-  <h1>Articles</h1>
-  <%= link_to 'New article', new_article_path %>
+  <h1><%= link_to "Wikinimous", index_path %></h1>
+  <h3><%= link_to 'New article', new_article_path %></h3>
 </div>
 
 <div class="article-container">
 
 <% @articles.each do |article| %>
   <div class="article-preview">
-    <%= link_to article.title, article_path(article.id) %>
+    <h2><%= link_to article.title, article_path(article.id) %></h2>
     <p><%= article.content[0..100] %></p>
   </div>
 <% end %>

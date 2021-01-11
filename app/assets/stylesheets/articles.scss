@@ -5,8 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
 $ming: #3C6E71;
-$cream: #FFEFDF;
+$cream: #FFFAF0;
 $spring-bud: #D0D1AC;
+$light-salmon: #FAAA8D;
 
 html, body {
   margin: 0;
@@ -26,11 +27,50 @@ h1 {
 
 h2 {
   font-size: 16pt;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 14pt;
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
   color: $ming;
+}
+
+input[type=text] {
+  padding: 8px;
+  width: 100%;
+  border: 1pt dotted $light-salmon;
+  border-radius: 4px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 10pt;
+}
+
+textarea {
+  padding: 8px;
+  width: 100%;
+  height: 200px;
+  border: 1pt dotted $light-salmon;
+  border-radius: 4px;
+  resize: none;
+  font-family: "Work Sans", sans-serif;
+  font-size: 10pt;
+}
+
+input[type=submit] {
+  margin: 14px -18px;
+  padding: 14px 24px;
+  background-color: $light-salmon;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14pt;
+  font-weight: 600;
+  float: right;
 }
 
 .top-nav {
@@ -43,10 +83,14 @@ a {
 }
 
 .article-container {
-  margin: 0 auto;
+  margin: 100px auto;
   width: 600px;
 }
 
 .article-preview {
   margin: 40px;
+}
+
+.article-box {
+  margin: 100px 40px 0 40px;
 }

@@ -1,7 +1,7 @@
 # Destroy all articles in db
 Article.destroy_all
 
-# Create 6 new articles
+# Create 12 new articles
 12.times do
   content = ''
   content += Faker::TvShows::RuPaul.quote + ' '

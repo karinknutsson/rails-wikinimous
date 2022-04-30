@@ -2,7 +2,7 @@
 Article.destroy_all
 
 # Create 6 new articles
-6.times do
+12.times do
   content = ''
   content += Faker::TvShows::RuPaul.quote + ' '
   content += Faker::GreekPhilosophers.quote + ' '

@@ -1,13 +1,10 @@
-// Place all the styles related to the articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Radio+Canada:300,400,600,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
-
-$ming: #3C6E71;
-$cream: #FFFAF0;
-$spring-bud: #D0D1AC;
-$light-salmon: #FAAA8D;
+$cotton-candy: #FDC5F5;
+$plum-web: #F7AEF8;
+$lavender-floral: #B388EB;
+$cornflower-blue: #8093F1;
+$sky-blue-crayola: #72DDF7;
 
 html, body {
   margin: 0;
@@ -15,8 +12,8 @@ html, body {
 }
 
 body {
-  background-color: $cream;
-  font-family: "Work Sans", sans-serif;
+  background-color: $lavender-floral;
+  font-family: "Radio Canada", sans-serif;
   font-size: 14pt;
   font-weight: 400;
 }
@@ -27,25 +24,24 @@ h1 {
 
 h2 {
   font-size: 16pt;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 14pt;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a {
   text-decoration: none;
-  color: $ming;
+  color: white;
 }
 
 input[type=text] {
   padding: 8px;
   width: 100%;
-  border: 1pt dotted $light-salmon;
   border-radius: 4px;
-  font-family: "Work Sans", sans-serif;
+  font-family: inherit;
   font-size: 10pt;
 }
 
@@ -53,41 +49,57 @@ textarea {
   padding: 8px;
   width: 100%;
   height: 200px;
-  border: 1pt dotted $light-salmon;
   border-radius: 4px;
   resize: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: inherit;
   font-size: 10pt;
 }
 
 input[type=submit] {
   margin: 14px -18px;
   padding: 14px 24px;
-  background-color: $light-salmon;
   color: white;
   border: 0;
   border-radius: 4px;
-  font-family: "Work Sans", sans-serif;
+  font-family: inherit;
   font-size: 14pt;
   font-weight: 600;
   float: right;
 }
 
+p {
+  font-size: 12pt;
+}
+
 .top-nav {
   margin: 0;
   padding: 20px 30px 20px 30px;
-  background-color: $spring-bud;
+  background-color: $plum-web;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .article-container {
-  margin: 100px auto;
-  width: 600px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: start;
+  // flex-direction: column;
+  column-count: 3;
+  margin: 80px;
+  width: 100%;
 }
 
-.article-preview {
+.article-card {
+  break-inside: avoid;
+  background: white;
+  padding: 32px;
+  width: 240px;
+  border-radius: 4px;
+  a, a:active, a:hover, a:visited {
+    color: black;
+    text-decoration: none;
+  }
   margin: 40px;
 }
 

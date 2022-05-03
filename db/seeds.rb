@@ -7,5 +7,5 @@ Article.destroy_all
   content += Faker::TvShows::RuPaul.quote + ' '
   content += Faker::GreekPhilosophers.quote + ' '
   content += Faker::TvShows::RuPaul.quote
-  Article.create(title: Faker::TvShows::RuPaul.queen, content: content)
+  Article.create(title: Faker::TvShows::RuPaul.queen, content: content, score: 1)
 end

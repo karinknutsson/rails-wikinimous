@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root to: 'articles#index'
 
   get '/articles', to: 'articles#index', as: :index
+  # get 'app', to: 'articles#index'
+  # get 'app/*path', to: 'articles#index'
 
   get '/articles/new', to: 'articles#new', as: :new_article
   post '/articles', to: 'articles#create'

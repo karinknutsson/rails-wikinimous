@@ -109,6 +109,21 @@ p {
 .article-score {
   float: right;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upvote, .downvote {
+  // font-size: 9pt;
+}
+
+.upvote {
+  color: #42ffa1 !important;
+}
+
+.downvote {
+  color: #ff4252 !important;
 }
 
 .show-content {

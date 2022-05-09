@@ -4,11 +4,9 @@
     <div class="article-card">
 
       <div class="article-score">
-        <%= link_to "▲", { controller: "articles", action: "index", article: article.id, vote: "up" } %>
-
-
-        <%= article.score.to_s %>
-
+        <%= link_to "▲", { controller: "articles", action: "index", article: article.id, vote: "up" }, class: "upvote" %>
+        <span class="score"><%= article.score.to_s %></span>
+        <%= link_to "▼", { controller: "articles", action: "index", article: article.id, vote: "down" }, class: "downvote" %>
       </div>
 
       <%= link_to article_path(article.id) do %>

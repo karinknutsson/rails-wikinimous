@@ -2,8 +2,16 @@
 
   <% @articles.each do |article| %>
     <div class="article-card">
+
+      <div class="article-score">
+        <%= link_to "▲", { controller: "articles", action: "index", article: article.id, vote: "up" } %>
+
+
+        <%= article.score.to_s %>
+
+      </div>
+
       <%= link_to article_path(article.id) do %>
-        <span class="article-score"><%= article.score.to_s %></span>
         <h4><%= article.title %></h4>
         <p><%= article.content[0..520] %></p>
       <% end %>

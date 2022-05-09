@@ -3,7 +3,9 @@
     <h2>
       <%= @article.title %>
       <span style="float: right;">
-        <%= link_to image_tag('edit-solid.svg', size: '20'), edit_article_path(@article.id) %>
+        <%= link_to edit_article_path(@article.id) do %>
+          <i class="fa-solid fa-pen-to-square"></i>pen
+        <% end %>
         <%= link_to image_tag('trash-alt-solid.svg', size: '20'), article_path(@article), method: :delete, data: { confirm: "Are you sure?" }  %>
       </span>
     </h2>

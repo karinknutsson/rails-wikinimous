@@ -1,6 +1,18 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all
+    @articles = Article.all.order(score: :desc)
+
+    if params[:vote] == 'up'
+      @article = Article.find(params[:article])
+      @article.score += 1
+      @article.save
+    end
+
+    if params[:vote] == 'down'
+      @article = Article.find(params[:article])
+      @article.score -= 1
+      @article.save
+    end
   end
 
   def show
